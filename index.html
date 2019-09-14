@@ -16,7 +16,7 @@
     </li>
     <li class="login page">
       <div class="form">
-        <h3 class="title">What's your nickname?</h3>
+        <h3 class="title">你叫啥子名字？</h3>
         <input class="usernameInput" type="text" maxlength="14" />
       </div>
     </li>
@@ -115,7 +115,7 @@
           .text(data.username)
           .css('color', getUsernameColor(data.username));
         var $messageBodyDiv = $('<span class="messageBody">')
-          .text(data.message);
+          .html(data.message);
     
         var typingClass = data.typing ? 'typing' : '';
         var $messageDiv = $('<li class="message"/>')
